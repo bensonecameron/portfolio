@@ -67,8 +67,8 @@ a {
 }
 
 .main-footer {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 /* ---- Layout Containers ---- */
@@ -122,6 +122,11 @@ a {
 #contact {
     text-align: center;
     margin: 1 1 auto;
+}
+
+.main-footer a {
+    color: #ffffff;
+    text-align: center;
 }
 
 .srcset {
@@ -279,4 +284,6 @@ a {
     .exp-row {
         display: inline-block;
     }
+
+    /* full screen footer style */
 }
