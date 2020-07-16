@@ -1,0 +1,282 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+	line-height: 1.6;
+    color: #3a3a3a;
+}
+
+a { 
+	color: #111111;
+	text-decoration: none;
+}
+
+.title,
+.title-2 {
+    font-family: 'Montserrat', sans-serif;
+    clear: both;
+    text-transform: capitalize;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.title-line {
+    border-bottom:  2px solid black;
+    border-radius: 13%;
+    width: 5%;
+    display: block;
+    content: " ";
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigtion ---- */
+
+.name {
+    font-size: 1.25em;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: transparent;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #111111;
+	text-transform: uppercase;
+}
+
+.name a,
+.main-nav a {
+    padding: 10px 15px;
+    display: block;
+    
+}
+
+.main-footer {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+
+.main-header {
+    text-align: center;
+    background: transparent;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-bottom: 30px;
+}
+
+.main-footer {
+	padding: 150px;
+    background: #141618;
+}
+
+/* ---- Page Elements ---- */
+
+.optional {
+    display: none;
+}
+
+.banner img {
+    display: none;
+}
+
+#skills img {
+    display:none;
+}
+
+.port-item {
+    display: inline-block;
+}
+
+.port-item img {
+    height: 300px;
+    width: 300px;
+}
+
+.exp-row {
+    display: none;
+}
+
+#contact {
+    text-align: center;
+    margin: 1 1 auto;
+}
+
+.srcset {
+    width: 50px;
+    height: 50px;
+    float: right;
+    padding: 10 20;
+    color: rgba(240, 240, 240, 0.7) !important;
+    opacity: 0;
+}
+
+.srcset:hover {
+    opacity: 1.0;
+}
+
+/* ================================= 
+  Media Querries
+==================================== */
+
+@media (min-width: 769px) {
+   
+    .main-header {
+        background-image: url("../img/Dolomites.jpeg");
+        background-size: cover;
+        background-position: center;
+        min-height: 510px;
+    }
+    .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .main-nav li {
+        float: left;
+        margin-left: 8px;
+    }
+
+    .headline {
+        content: "";
+        font-family: 'Montserrat', sans-serif;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #ffffff;
+        display: table;
+        clear: both;
+        margin: auto;
+        margin-bottom: .5em;
+        padding-bottom: 0;
+    }
+    
+    .headline {
+        margin-top: 0em;
+    }
+
+    .tagline {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        margin: auto;
+    }
+    .wrap {
+        min-height: calc(100vh - 200px);
+    }
+    
+    .container {    
+        width: 85%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .title,
+    .title-2 {
+        font-size: 60px;
+        font-weight: bolder;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+    p {
+        font-size: 20px;
+    }
+
+    .clearfix::after { /* after creating a flot for my nav it collasped the header class, the clear fix it moves the psedo element past the float */
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* full screen about style */
+
+    .a-wrap1 {
+        float: left;
+        width: 50%;
+        margin: auto;
+    }
+
+    .a-wrap2 {
+        float: right;
+        width: 50%;
+        margin: auto;
+    }
+
+     /* full screen passion style */
+    #passion {
+        background-image: url("../img/contact-hero.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 510px;
+        clear: both;
+        width: 100%;
+    }
+    /* full screen skills style */
+
+    #skills img {
+        display: inline;
+        margin-bottom: 1%;
+        padding: 0px;
+    }
+
+    #skills h3 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    #skills p {
+        margin-top: 1%
+    }
+
+    s-row {
+        margin-bottom: 10%;
+    }
+
+    .horizontal {
+        width: 22%; 
+        display: inline-block;
+        border: 10px 10px;
+    }
+
+    /* full screen skills style */
+    .port-item img {
+        height: 300px;
+        width: 300px;
+    }
+
+    /* full screen exp style */
+
+    .view-resume {
+        display: none;
+    }
+
+    .exp-row {
+        display: inline-block;
+    }
+}
